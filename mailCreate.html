@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
 <meta charset="UTF-8">
 <title>メール詳細</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function myEnter(){
+alert("送信が完了しました。");  //文字列の表示
+}
+</script>
 </head>
 <body>
-<div align="center"
+<div align="center">
 <section>
 <h2>メール詳細</h2>
 <br>
@@ -25,7 +29,7 @@
 <textarea cols="70" rows="8" ></textarea>
 <br>
 	<form action="menu.html" method="post">
-		<input type="submit" class="btn btn-warning" value="送信">
+		<input type="submit" class="btn btn-warning" value="送信" onclick="myEnter()">
 	</form>
 	<form action="menu.html" method="post">
 		<input type="submit" class="btn btn-warning" value="Menuに戻る">
