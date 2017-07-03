@@ -14,12 +14,19 @@
 <section>
 <h2>メール詳細</h2>
 <br>
-送信者:送り主<br>
-件名:<input type="text" value="件名" readonly><br>
+宛先:<select name="宛先">
+<option value="1">浅井</option>
+<option value="2" selected>市川</option>
+<option value="3">岡本</option>
+</select><br>
+件名:<input type="text" value="件名" ><br>
 本文:
 <br>
-<textarea cols="70" rows="8" readonly>本文</textarea>
+<textarea cols="70" rows="8" ></textarea>
 <br>
+	<form action="menu.html" method="post">
+		<input type="submit" class="btn btn-warning" value="送信">
+	</form>
 	<form action="menu.html" method="post">
 		<input type="submit" class="btn btn-warning" value="Menuに戻る">
 	</form>
