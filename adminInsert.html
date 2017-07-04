@@ -8,23 +8,6 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-</head>
-<body>
-<h2 style="text-align: center;">管理者登録</h2>
-<br>
-<div class="col-sm-offset-1 col-sm-10">
-<table class="table">
-<tr>
-<th>ID</th><th>PASS</th><th>名前</th></tr>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td>
-</tr>
-</table>
-<br>
 <script type="text/javascript"> 
 
 function check(){
@@ -57,24 +40,100 @@ function check(){
 }
 
 </script>
-
 </head>
 <body>
-<table>
-<tr>
-<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
-<th><input type="checkbox" name="check1" value="ok"></th>
-<div class="col-sm-offset-2 col-sm-10">
-<th><input type="submit" class="btn btn-info"value="確認"></th>
-</form>
-<form class="form-horizontal" action="adminMenu.html">
-<div class="col-sm-offset-2 col-sm-10">
-			<th><input type="submit" class="btn btn-info" value="戻る"></th>
-		</div>
-	</form>
-	</tr>
-	</table>
-	
-</div>
+<h2 style="text-align: center;">管理者登録</h2>
+		<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
+		<div class="col-sm-offset-1 col-sm-10">
+		<table class="table">
+		<caption>団体・教員登録</caption>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>名前</th>
+					<th>PASS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+				</tr>
+			</tbody>		
+			</table>
+			</div>
+					  <div class="form-group">
+     <div class="col-sm-offset-5 col-sm-7">
+			  <div class="checkbox">
+    		<label>
+<input type="checkbox" name="check1" value="ok">
+    		</label>
+  	</div>
+  	     </div>
+  </div>
+<div class="col-sm-offset-5 col-sm-1">
+<input type="submit" class="btn btn-primary" name="button" value="戻る"
+				onclick="location.href='updateInput.jsp'; return false;">
+				</div>
+				<div class="col-sm-6">
+<input type="submit" class="btn btn-info"value="確認">
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="col-sm-offset-1 col-sm-11">
+		<a href="index" class="btn btn-default">Menu</a>
+	</div>
 </body>
 </html>
