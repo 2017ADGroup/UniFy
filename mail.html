@@ -10,17 +10,17 @@
 <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<div align="center"
-<section>
-<h2>メールボックス</h2>
-<br>
-<font size="5">メール一覧</font>
 
+<h2 style="text-align: center;">メールボックス</h2>
+<div class="col-sm-offset-1 col-sm-10">
 <table  class="table">
+<caption>メール一覧</caption>
+<thead>
 	<tr>
-		<th width="60px">To</th><th width="130px">FROM</th><th width="230px">件名</th>
+		<th>To</th><th>FROM</th><th>件名</th>
 	</tr>
-	
+	</thead>
+	<tbody>
 	<tr>
 		<td>浅井</td>
 		<td>市川</td>
@@ -31,12 +31,15 @@
 		<td>浅井</td>
 		<td><a href="mailDetail.html">予約重複の件</a></td>
 	</tr>
+		</tbody>
 </table>
-</section>
-<br>
-	<form action="menu.html" method="post">
-		<input type="submit" class="btn btn-default" value="Menu">
-	</form>
+  </div>
+	<br>
+	<br>
+	<br>
+	<div class="col-sm-offset-1 col-sm-11">
+		<a href="menu.html" class="btn btn-default">Menu</a>
+	</div>
 <div>
 </body>
 </html>
