@@ -177,8 +177,9 @@ alert("更新しました。");
 				</div>
 			</div>
 			</fieldset>
+			<br>
 			<div class="form-group">
-     		<div class="col-sm-offset-2 col-sm-10">
+     		<div class="col-sm-offset-5 col-sm-7">
 			  <div class="checkbox">
     		<label>
       			<input type="checkbox"> この内容でよろしいですか？
@@ -186,14 +187,19 @@ alert("更新しました。");
   	</div>
   	     </div>
   </div>
-		<div class="col-sm-offset-2 col-sm-10">
+  <br>
+  <div class="col-sm-offset-5 col-sm-1">
+<input type="submit" class="btn btn-info" name="button" value="戻る"
+				onclick="location.href='updateInput.jsp'; return false;">
+				</div>
+		<div class="col-sm-6">
 			<input type="submit" class="btn btn-danger" value="更新" onclick="myEnter()">
 		</div>
 	</form>
 	<br>
 	<br>
 	<br>
-	<div>
+		<div class="col-sm-offset-1 col-sm-11">
 		<a href="index" class="btn btn-default">Menu</a>
 	</div>
 </body>
