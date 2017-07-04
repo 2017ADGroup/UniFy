@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>教室予約登録</title>
 <style type="text/css">
-<!--
+
 img {
 width:150px;
 height:150px;
@@ -21,7 +21,7 @@ function check(){
 		flag = 1;
 	}
 	if(flag){
-		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
+		alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
 		return false; // 送信を中止
 	}
 	else{
@@ -57,7 +57,8 @@ function check(){
 	<tr>
 		<td>
 		規模:100人<br>
-		備品:プロジェクター
+		備品:プロジェクター、アンプ
+
 		</td>
 		<td>
 		規模:100人<br>
@@ -87,7 +88,7 @@ function check(){
 	</tr>
 </table>
 </form>
-<form name="reserveForm" method="post" action="roomInsert.html" onSubmit="return check()">
+<form name="reserveForm" method="post" action="menu.html" onSubmit="return check()">
 <p>使用予定日<br>
 	<select>
 	<option>7</option>
@@ -147,6 +148,6 @@ function check(){
 <br><textarea name="bikou" rows="4" cols="40"></textarea>
 <p><button type="submit">予約する</button> 入力内容を確認しました<input type="checkbox" name="check" value="check">
 </form>
-<a href="menu.html">メニューへ戻る</a>
+<a href="menu.html">MENU</a>
 </body>
 </html>
