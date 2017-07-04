@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>管理者更新削除画面</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+
+<body>
+	<h4>
+		更新、削除を行います<br> 更新、削除を入力して確認を押してください。
+		
+		<table class="table">
+		<caption>管理者更新・削除</caption></h4>
+			<thead>
+				<tr>
+					<th  class="col-sm-4">ID</th>
+					<th  class="col-sm-4">名前</th>
+					<th  class="col-sm-4">PASS</th>
+					<th  class="col-sm-4">削除</th> 
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+			</tbody>		
+			</table>
+			
+<script type="text/javascript"> 
+
+function check(){
+
+	var flag1 = 0;
+
+	// 設定開始（チェックする項目を設定してください）
+
+	if(!document.form1.check1.checked){
+
+		flag1 = 1;
+
+	}
+
+	// 設定終了
+
+
+	if(flag1){
+
+		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
+		return false; // 確認を中止
+
+	}
+	else{
+
+		window.alert('確認しました');
+		return true; // 確認を実行
+
+	}
+
+}
+
+</script>
+</head>
+<table>
+<tr>
+<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
+<th><input type="checkbox" name="check1" value="ok"></th>
+<div class="col-sm-offset-2 col-sm-10">
+<th><input type="submit" class="btn btn-info"value="確認"></th>
+</form>
+<form class="form-horizontal" action="adminMenu.html">
+<div class="col-sm-offset-2 col-sm-10">
+			<th><input type="submit" class="btn btn-info" value="戻る"></th>
+		</div>
+	</form>
+	</tr>
+	</table>
+</body>
+</html>
