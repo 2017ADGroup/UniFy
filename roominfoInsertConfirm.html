@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>生徒情報更新画面</title>
+<title>教室情報確認画面</title>
 <!-- BootstrapのCSS読み込み -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- jQuery読み込み -->
@@ -12,7 +12,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript"><!--
 function myEnter(){
-alert("更新しました。"); 
+alert("登録しました。"); 
 }
 // --></script>
 </head>
@@ -26,7 +26,7 @@ alert("更新しました。");
 			<div class="form-group">
 				<label for="NAME" class="col-sm-2 control-label">名前</label>
 				<div class="col-sm-8">
-					<input type="text" name="name" class="form-control" id="NAME" placeholder="名前">
+					<input type="text" name="name" class="form-control" id="NAME" readonly="readonly">
 				</div>
 			</div>
 			<div class="form-group">
@@ -39,78 +39,68 @@ alert("更新しました。");
 				<label for="SCALE" class="col-sm-2 control-label">規模</label>
 				<div class="col-sm-8">
 						<input type="text" name="scale" class="form-control" id="SCALE"
-						placeholder="規模" >
+						readonly="readonly" >
 				</div>
 			</div>
 			  <div class="form-group">
 			  <label for="FIXTURES" class="col-sm-2 control-label">備品</label>
 				<div class="col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div>
 				<div class="col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div></div></div>
 				<div class="form-group">
 								<div class="col-sm-offset-2 col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div>
 								<div class="col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div></div>
 				<div class="form-group">
 												<div class="col-sm-offset-2 col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div>
 								<div class="col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div></div>
 				<div class="form-group">
 												<div class="col-sm-offset-2 col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div>
 								<div class="col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div></div>
 				<div class="form-group">
 												<div class="col-sm-offset-2 col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div>
 				<div class="col-sm-4">
 						<input type="text" name="pass" class="form-control" id="FIXTURES"
-						placeholder="備品" >
+						readonly="readonly" >
 				</div></div>
 			<div class="form-group">
 				<label for="REMARKS" class="col-sm-2 control-label">備考</label>
 				<div class="col-sm-8">
 						<textarea name="remarks" rows="4" class="form-control" id="REMARKS" 
-						placeholder="その他何かあれば書いてください" ></textarea>
+						readonly="readonly" ></textarea>
 				</div>
 			</div>
 			</fieldset>
-			<div class="form-group">
-     		<div class="col-sm-offset-2 col-sm-10">
-			  <div class="checkbox">
-    		<label>
-      			<input type="checkbox">
-    		</label>
-  	</div>
-  	     </div>
-  </div>
 		<div class="col-sm-offset-2 col-sm-10">
-			<input type="submit" class="btn btn-info" value="確認" onclick="myEnter()">
+			<input type="submit" class="btn btn-info" value="実行" onclick="myEnter()">
 		</div>
 	</form>
-	<br>
-	<br>
-	<br>
+	</div>
+	
 </body>
 </html>
