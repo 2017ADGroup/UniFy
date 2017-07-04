@@ -1,10 +1,9 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>登録画面</title>
+<title>生徒情報登録画面</title>
 <!-- BootstrapのCSS読み込み -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- jQuery読み込み -->
@@ -12,13 +11,19 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript"><!--
+function myEnter(){
+alert("登録しました。"); 
+}
+// --></script>
+</head>
 <body>
 	<h4>
 		登録を行います<br> 登録情報を入力して登録を押してください。
-		
+	</h4>
+	<form action="menu.html" method="post">
 		<table class="table">
-		<caption>生徒登録</caption></h4>
+		<caption>生徒登録</caption>
 			<thead>
 				<tr>
 					<th  class="col-sm-4">ID</th>
@@ -82,52 +87,23 @@
 						<input type="text" name="pass" class="form-control">
 					</td>
 				</tr>
-			</tbody>		
-			</table>
-			
-<script type="text/javascript"> 
-
-function check(){
-
-	var flag1 = 0;
-
-	// 設定開始（チェックする項目を設定してください）
-
-	if(!document.form1.check1.checked){
-
-		flag1 = 1;
-
-	}
-
-	// 設定終了
-
-
-	if(flag1){
-
-		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
-		return false; // 確認を中止
-
-	}
-	else{
-
-		window.alert('確認しました');
-		return true; // 確認を実行
-
-	}
-
-}
-
-</script>
-</head>
-<table>
-<tr>
-<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
-<th><input type="checkbox" name="check1" value="ok"></th>
-<div class="col-sm-offset-2 col-sm-10">
-<th><input type="submit" class="btn btn-info"value="確認"></th>
-</form>
-	</tr>
-	</table>
+			</tbody>
+		</table>
+  		<div class="col-sm-1">
+			<input type="submit" class="btn btn-danger" value="登録" onclick="myEnter()">
+		</div>
+		<div class="checkbox">
+    		<label>
+      			<input type="checkbox"> この内容でよろしいですか？
+    		</label>
+ 		</div>
+	</form>
+	<br>
+	<br>
+	<br>
+	<div>
+		<a href="index" class="btn btn-default">Menu</a>
+	</div>
 
 </body>
 </html>
