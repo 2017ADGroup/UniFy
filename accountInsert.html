@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>更新削除画面</title>
+<title>アカウント登録画面</title>
 <!-- BootstrapのCSS読み込み -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- jQuery読み込み -->
@@ -47,18 +47,16 @@ function check(){
 </script>
 </head>
 <body>
-	<h4>
-		更新、削除を行います<br> 更新、削除を入力して確認を押してください。</h4>
+	<h4>登録を行います<br> 登録情報を入力して登録を押してください。</h4>
 		<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
 		<div class="col-sm-offset-1 col-sm-10">
 		<table class="table">
-		<caption>更新・削除</caption>
+		<caption>団体・教員登録</caption>
 			<thead>
 				<tr>
 					<th>ID</th>
 					<th>名前</th>
 					<th>PASS</th>
-					<th>削除</th> 
 				</tr>
 			</thead>
 			<tbody>
@@ -72,8 +70,16 @@ function check(){
 					<td>
 						<input type="text" name="pass" class="form-control">
 					</td>
+				</tr>
+				<tr>
 					<td>
-						<input type="checkbox" name="check1" value="ok">
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
 					</td>
 				</tr>
 				<tr>
@@ -86,9 +92,6 @@ function check(){
 					<td>
 						<input type="text" name="pass" class="form-control">
 					</td>
-					<td>
-						<input type="checkbox" name="check1" value="ok">
-					</td>
 				</tr>
 				<tr>
 					<td>
@@ -100,9 +103,6 @@ function check(){
 					<td>
 						<input type="text" name="pass" class="form-control">
 					</td>
-					<td>
-						<input type="checkbox" name="check1" value="ok">
-					</td>
 				</tr>
 				<tr>
 					<td>
@@ -113,23 +113,6 @@ function check(){
 					</td>
 					<td>
 						<input type="text" name="pass" class="form-control">
-					</td>
-					<td>
-						<input type="checkbox" name="check1" value="ok">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<input type="text" name="pass" class="form-control">
-					</td>
-					<td>
-						<input type="text" name="pass" class="form-control">
-					</td>
-					<td>
-						<input type="text" name="pass" class="form-control">
-					</td>
-										<td>
-						<input type="checkbox" name="check1" value="ok">
 					</td>
 				</tr>
 			</tbody>		
@@ -139,7 +122,7 @@ function check(){
      <div class="col-sm-offset-5 col-sm-7">
 			  <div class="checkbox">
     		<label>
-<input type="checkbox" name="check1" value="ok">
+      			<input type="checkbox"> この内容でよろしいですか？
     		</label>
   	</div>
   	     </div>
@@ -149,7 +132,7 @@ function check(){
 				onclick="location.href='updateInput.jsp'; return false;">
 				</div>
 				<div class="col-sm-6">
-<input type="submit" class="btn btn-info"value="確認">
+<input type="submit" class="btn btn-danger"value="登録">
 	</div>
 	<br>
 	<br>
@@ -157,6 +140,5 @@ function check(){
 	<div class="col-sm-offset-1 col-sm-11">
 		<a href="index" class="btn btn-default">Menu</a>
 	</div>
-
 </body>
 </html>
