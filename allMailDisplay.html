@@ -8,60 +8,62 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function entryChange() {
+			radio = document.getElementsByName('entryPlan')
+			if (radio[0].checked) {
+				document.getElementById('id').style.display = "";
+				document.getElementById('tofrom').style.display = "none";
+			} else if (radio[1].checked) {
+				document.getElementById('id').style.display = "none";
+				document.getElementById('tofrom').style.display = "";
+			}
+		}
+		window.onload = entryChange;
+	</script>
 </head>
 <body>
-<div align="center"
-<section>
-<h2>メールボックス</h2>
-<br>
-<font size="5">メール一覧</font><br>
-<script type="text/javascript">
-function entryChange1(){
-radio = document.getElementsByName('entryPlan') 
-if(radio[0].checked) {
-//フォーム
-document.getElementById('firstBox').style.display = "";
-document.getElementById('secondBox').style.display = "none";
-//特典
-document.getElementById('firstNotice').style.display = "";
-}else if(radio[1].checked) {
-//フォーム
-document.getElementById('firstBox').style.display = "none";
-document.getElementById('secondBox').style.display = "";
-1
-//特典
-1
-document.getElementById('firstNotice').style.display = "none";
-1
-}
-}
+	<div align="center"
+		
+		<section>
+			<h2>メールボックス</h2>
+			<br> <font size="5">メール一覧</font><br>
+			<label><input type="radio" name="entryPlan" value="hoge1" onclick="entryChange();" checked="checked" />ID検索</label>
+			<label><input type="radio" name="entryPlan" value="hoge2" onclick="entryChange();" />詳細検索</label>
+			<span id="id">
+				ID<input type="text" value="">
+			</span>
+			<span id="tofrom">
+				TO<input type="text" value="">
+				FROM<input type="text" value="">
+			</span>
+			Keyword<input type="text"value="">
+			<form action="allMailDisplay.html" method="post">
+				<input type="submit" class="btn btn-defoult" value="検索">
+			</form>
+			<table class="table">
+				<tr>
+					<th width="60px">To</th>
+					<th width="130px">FROM</th>
+					<th width="230px">件名</th>
+				</tr>
 
-//オンロードさせ、リロード時に選択を保持
-
-window.onload = entryChange1;
-</script>
-ID<input type="text" value="" >Keyword<input type="text" value="" >
-<table  class="table">
-	<tr>
-		<th width="60px">To</th><th width="130px">FROM</th><th width="230px">件名</th>
-	</tr>
-	
-	<tr>
-		<td>浅井</td>
-		<td>市川</td>
-		<td><a href="mailDetail.html">予約重複の件</ar></td>
-	</tr>
-	<tr>
-		<td>市川</td>
-		<td>浅井</td>
-		<td><a href="mailDetail.html">予約重複の件</a></td>
-	</tr>
-</table>
-</section>
-<br>
-	<form action="menu.html" method="post">
-		<input type="submit" class="btn btn-default" value="Menu">
-	</form>
-<div>
+				<tr>
+					<td>浅井</td>
+					<td>市川</td>
+					<td><a href="mailDetail.html">予約重複の件</ar></td>
+				</tr>
+				<tr>
+					<td>市川</td>
+					<td>浅井</td>
+					<td><a href="mailDetail.html">予約重複の件</a></td>
+				</tr>
+			</table>
+		</section>
+		<br>
+		<form action="menu.html" method="post">
+			<input type="submit" class="btn btn-warning" value="Menuへ戻る">
+		</form>
+		<div>
 </body>
 </html>
