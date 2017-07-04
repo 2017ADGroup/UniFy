@@ -5,19 +5,19 @@
 <title>予約更新・削除</title>
 </head>
 <body>
-<form id="reserveUpdateForm" action="roomUpdateConfirm.html" method="post">
-	<fieldset>
-		<table class="table" border="1">
+<form class="form-hrizonatal" id="reserveUpdateForm" action="roomUpdateConfirm.html" method="post">
+		<table class="table">
 			<caption>予約一覧</caption>
 			<thead>
 				<tr>
-					<th>月日</th>
-					<th>時間</th>
-					<th>教室名</th>
-					<th>使用目的/<br>使用人数</th>
-					<th>備品</th>
-					<th>備考</th>
-					<th>予約取り消し</th>
+					<th class="col-sm-1">月日</th>
+					<th class="col-sm-1">時間</th>
+					<th class="col-sm-1">教室名</th>
+					<th class="col-sm-2">使用目的/使用人数</th>
+					<th class="col-sm-3">備品</th>
+					<th class="col-sm-2">備考</th>
+					<th class="col-sm-1">予約取消</th>
+					<th class="col-sm-1"></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -31,24 +31,22 @@
 							<option>課外活動</option>
 							<option>備品整備</option>
 							<option>その他(備考欄記述)</option>
-						</select>/<br>
+						</select>/
 						<input name="ninnzuu" type="number" value="100" disabled='disabled' />人
 					</td>
 					<td>
 						<table>
 							<tr>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
-								<td>アンプ<br><input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
-							</tr>
-							<tr>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
+								<td>アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
 							</tr>
 						</table>
 					</td>
@@ -72,18 +70,18 @@
 					<td>
 						<table>
 							<tr>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
-								<td>アンプ<br><input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
+								<td>アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
 							</tr>
 							<tr>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
 							</tr>
 						</table>
 					</td>
@@ -163,7 +161,6 @@
 					</tr>
 				</tbody>
 			</table>
-		</fieldset>
 	</form>
 <a href="menu.html">メニューへ戻る</a>
 </body>
