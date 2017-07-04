@@ -15,7 +15,31 @@
 <h2>メールボックス</h2>
 <br>
 <font size="5">メール一覧</font><br>
+<script type="text/javascript">
+function entryChange1(){
+radio = document.getElementsByName('entryPlan') 
+if(radio[0].checked) {
+//フォーム
+document.getElementById('firstBox').style.display = "";
+document.getElementById('secondBox').style.display = "none";
+//特典
+document.getElementById('firstNotice').style.display = "";
+}else if(radio[1].checked) {
+//フォーム
+document.getElementById('firstBox').style.display = "none";
+document.getElementById('secondBox').style.display = "";
+1
+//特典
+1
+document.getElementById('firstNotice').style.display = "none";
+1
+}
+}
 
+//オンロードさせ、リロード時に選択を保持
+
+window.onload = entryChange1;
+</script>
 ID<input type="text" value="" >Keyword<input type="text" value="" >
 <table  class="table">
 	<tr>
