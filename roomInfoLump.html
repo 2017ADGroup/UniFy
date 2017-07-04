@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>更新削除画面</title>
+<title>教室情報更新削除画面</title>
 <!-- BootstrapのCSS読み込み -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- jQuery読み込み -->
@@ -29,7 +29,7 @@ alert("削除しました。");
 			<thead>
 				<tr>
 					<th>名前</th>
-					<th class="col-md-2">削除</th>
+					<th>削除</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -75,14 +75,13 @@ alert("削除しました。");
      <div class="col-sm-offset-2 col-sm-10">
 			  <div class="checkbox">
     		<label>
-      			<input type="checkbox"> Check me out
+      			<input type="checkbox"> この内容でよろしいですか？
     		</label>
   	</div>
   	     </div>
   </div>
-  <br> 
   		<div class="col-sm-offset-2 col-sm-10">
-		<input type="submit" class="btn btn-danger" value="削除" onclick="myEnter()">
+		<br> <input type="submit" class="btn btn-danger" value="削除" onclick="myEnter()">
 		</div>
 	</form>
 	<br>
