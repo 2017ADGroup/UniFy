@@ -1,27 +1,106 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>生徒登録</title>
+<title>更新削除画面</title>
+<!-- BootstrapのCSS読み込み -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
-</head>
+
 <body>
-<center><h2>管理者更新・削除</h2></center>
-<center><table border=1>
-<tr>
-<th width="150px">ID</th><th width="160px">PASS</th><th width="150px">名前</th><th width="30px">削除</th>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td><th width="30px"><input type="checkbox" name="check1" value="ok"></th>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td><th width="30px"><input type="checkbox" name="check1" value="ok"></th>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td><th width="30px"><input type="checkbox" name="check1" value="ok"></th>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td><th width="30px"><input type="checkbox" name="check1" value="ok"></th>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td><th width="30px"><input type="checkbox" name="check1" value="ok"></th>
-<tr><td>　　　　　　　</td><td>　　　　　　　　</td><td>　　　　　　　</td><th width="30px"><input type="checkbox" name="check1" value="ok"></th>
-</tr>
-</table>
-<br>
+	<h4>
+		更新、削除を行います<br> 更新、削除を入力して確認を押してください。
+		
+		<table class="table">
+		<caption>管理者更新・削除</caption></h4>
+			<thead>
+				<tr>
+					<th  class="col-sm-4">ID</th>
+					<th  class="col-sm-4">名前</th>
+					<th  class="col-sm-4">PASS</th>
+					<th  class="col-sm-4">削除</th> 
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="text" name="pass" class="form-control">
+					</td>
+					<td>
+						<input type="checkbox" name="check1" value="ok">
+					</td>
+				</tr>
+			</tbody>		
+			</table>
+			
 <script type="text/javascript"> 
 
 function check(){
@@ -47,7 +126,7 @@ function check(){
 	}
 	else{
 
-		window.alert('確認されました');
+		window.alert('確認しました');
 		return true; // 確認を実行
 
 	}
@@ -55,9 +134,7 @@ function check(){
 }
 
 </script>
-
 </head>
-<body>
 <table>
 <tr>
 <form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
@@ -72,6 +149,5 @@ function check(){
 	</form>
 	</tr>
 	</table>
-</center>
 </body>
 </html>
