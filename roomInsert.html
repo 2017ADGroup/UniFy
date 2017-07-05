@@ -126,7 +126,7 @@ function check(){
 </form>
 <form class="form-horizontal" name="reserveForm" method="post" action="menu.html" onSubmit="return check()">
  <div class="form-group">
- <label for="PUTRPOSE" class="col-sm-3 control-label">使用目的</label>
+ <label for="PUTRPOSE" class="col-sm-4 control-label">使用目的</label>
  <div class="col-sm-1">
 <select class="form-control" id="PURPOSE">
 	<option>7</option>
@@ -189,28 +189,42 @@ function check(){
 					<input type="text" name="name" class="form-control" id="NUMBER" placeholder="使用人数">
 				</div>
 			</div>
-			
+			 <div class="form-group">
+<label for="FIXTURES" class=" col-sm-3 control-label">備品使用</label>
+ <div class="col-sm-5">
   <div class="checkbox">
     <label>
-      <input type="checkbox">プロジェクター
+      <input type="checkbox" id="FIXTURES">プロジェクター
     </label>
-  </div>
-			
-			
-<table>
-	<tr>
-		<td>備品使用</td>
-	</tr>
-	<tr>
-		<td>プロジェクター</td><td><input type="checkbox" name="bihinn" value="1"></td>
-		<td>アンプ</td><td><input type="checkbox" name="bihinn" value="2"></td>
-	</tr>
-</table>
-<div>
-<p>備考欄
-<br><textarea name="bikou" rows="4" cols="40"></textarea>
-<p><button type="submit">予約する</button> 入力内容を確認しました<input type="checkbox" name="check" value="check">
+        <label>
+      <input type="checkbox" id="FIXTURES">アンプ
+    </label>
+  </div></div></div>
+  
+			<div class="form-group">
+				<label for="REMARKS" class="col-sm-3 control-label">備考</label>
+				<div class="col-sm-5">
+						<textarea name="remarks" rows="4" class="form-control" id="REMARKS" 
+						placeholder="その他何かあれば書いてください" ></textarea>
+				</div>
+			</div>
+		<div class="col-sm-offset-4 col-sm-8">
+			  <div class="checkbox">
+    		<label>
+      			<input type="checkbox"> この内容でよろしいですか？
+    		</label>
+  		</div><br></div>
+  				<div class="col-sm-offset-5 col-sm-7">
+			<input type="submit" class="btn btn-info" value="確認" onclick="myEnter()">
+			</div>
+
 </form>
-<a href="menu.html">MENU</a>
+
+	<div class="col-sm-offset-1 col-sm-11">
+	<br>
+	<br>
+	<br>
+		<a href="menu.html" class="btn btn-default">Menu</a>
+	</div>
 </body>
 </html>
