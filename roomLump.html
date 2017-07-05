@@ -3,9 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>予約更新・削除</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript"><!--
+function myEnter(){
+alert("更新しました。"); 
+}
+// --></script>
 </head>
 <body>
-<form class="form-hrizonatal" id="reserveUpdateForm" action="roomUpdateConfirm.html" method="post">
+<form id="reserveUpdateForm" action="roomUpdateConfirm.html" method="post">
 		<table class="table">
 			<caption>予約一覧</caption>
 			<thead>
@@ -31,26 +43,20 @@
 							<option>課外活動</option>
 							<option>備品整備</option>
 							<option>その他(備考欄記述)</option>
-						</select>/
-						<input name="ninnzuu" type="number" value="100" disabled='disabled' />人
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
 					</td>
-					<td>
-						<table>
-							<tr>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
-								<td>アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
-							</tr>
-						</table>
-					</td>
-					<td><textarea name="bikou" rows="8" cols="20" readonly='readonly'></textarea></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'>
+								アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
 					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
 					<td><button type="submit" name="reserve" value="1">更新</button></td>
 				</tr>
@@ -64,28 +70,20 @@
 							<option>課外活動</option>
 							<option>備品整備</option>
 							<option>その他(備考欄記述)</option>
-						</select>/<br>
-						<input name="ninnzuu" type="number" value="100" disabled='disabled' />人
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
 					</td>
-					<td>
-						<table>
-							<tr>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
-								<td>アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
-							</tr>
-							<tr>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
-								<td>プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
-							</tr>
-						</table>
-					</td>
-					<td><textarea name="bikou" rows="8" cols="20" readonly='readonly'></textarea></td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'>
+								アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
 					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
 					<td><button type="submit" name="reserve" value="1">更新</button></td>
 				</tr>
@@ -99,66 +97,50 @@
 							<option>課外活動</option>
 							<option>備品整備</option>
 							<option>その他(備考欄記述)</option>
-						</select>/<br>
-						<input name="ninnzuu" type="number" value="100" disabled='disabled' />人
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
 					</td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'>
+								アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
+					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
+					<td><button type="submit" name="reserve" value="1">更新</button></td>
+				</tr>
+				<tr>
+					<td>7/11</td>
+					<td>3限</td>
+					<td>A教室</td>
 					<td>
-						<table>
-							<tr>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
-								<td>アンプ<br><input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
-							</tr>
-							<tr>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
-							</tr>
-						</table>
-					</td>
-						<td><textarea name="bikou" rows="8" cols="20" readonly='readonly'></textarea></td>
-						<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
-						<td><button type="submit" name="reserve" value="1">更新</button></td>
-					</tr>
-					<tr>
-						<td>7/11</td>
-						<td>3限</td>
-						<td>A教室</td>
-						<td>
 						<select disabled='disabled'>
 							<option>講義</option>
 							<option>課外活動</option>
 							<option>備品整備</option>
 							<option>その他(備考欄記述)</option>
-						</select>/<br>
-						<input name="ninnzuu" type="number" value="100" disabled='disabled' />人
-						</td>
-						<td>
-							<table>
-								<tr>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="1" checked disabled='disabled'></td>
-									<td>アンプ<br><input type="checkbox" name="bihinn" value="2" checked disabled='disabled'></td>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="3" disabled='disabled'></td>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="4" disabled='disabled'></td>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="5" disabled='disabled'></td>
-								</tr>
-								<tr>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="6" disabled='disabled'></td>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="7" disabled='disabled'></td>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="8" disabled='disabled'></td>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="9" disabled='disabled'></td>
-									<td>プロジェクター<br><input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
-								</tr>
-							</table>
-						</td>
-						<td><textarea name="bikou" rows="8" cols="20" readonly='readonly'></textarea></td>
-						<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
-						<td><button type="submit" name="reserve" value="1">更新</button></td>
-					</tr>
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
+					</td>
+								<td>プロジェクター<input type="checkbox" name="bihinn" value="1" checked disabled='disabled'>
+								アンプ<input type="checkbox" name="bihinn" value="2" checked disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="3" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="4" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="5" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="6" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="7" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="8" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="9" disabled='disabled'>
+								プロジェクター<input type="checkbox" name="bihinn" value="10" disabled='disabled'></td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
+					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
+					<td><button type="submit" name="reserve" value="1">更新</button></td>
+				</tr>
 				</tbody>
 			</table>
 	</form>
