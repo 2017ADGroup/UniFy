@@ -12,40 +12,12 @@
 <!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript"><!--
-<!--
-function check(){
-
-	var flag = 0;
-
-	// 設定開始（チェックする項目を設定してください）
-
-	if(!document.form1.check1.checked){
-
-		flag = 1;
-
-	}
-
-	// 設定終了
-
-
-	if(flag){
-
-		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
-		return false; // 登録を中止
-
-	}
-	else{
-
-		window.alert('登録しました');
-		return true; // 登録を実行
-
-	}
-
+function myEnter(){
+alert("登録しました。"); 
 }
 // --></script>
 </head>
 <body>
-<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
 	<h4>
 		登録を行います<br> 登録情報を入力して登録を押してください。
 	</h4>
@@ -58,10 +30,6 @@ function check(){
 
 					<th  class="col-sm-4">ID</th>
 					<th  class="col-sm-4">名前</th>
-
-					<th>ID</th>
-					<th>名前</th>
-					<th>PASS</th>
 
 				</tr>
 			</thead>
@@ -79,11 +47,11 @@ function check(){
 		 <div class="col-sm-offset-5 col-sm-7">
 		<div class="checkbox">
     		<label>
-      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
+      			<input type="checkbox"> この内容でよろしいですか？
     		</label>
  		</div>
   		<div class="col-sm-1">
-			<input type="submit" class="btn btn-danger" value="登録">
+			<input type="submit" class="btn btn-danger" value="登録" onclick="myEnter()">
 		</div>
 		</div>
 	</form>
@@ -94,6 +62,5 @@ function check(){
 		<a href="menu.html" class="btn btn-default">Menu</a>
 	</div>
 </div>
-</form>
 </body>
 </html>
