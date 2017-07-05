@@ -15,7 +15,11 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript"><!--
+function myEnter(){
+alert("ログアウトします"); 
+}
+// --></script>
 </head>
 <body>
 	
@@ -33,7 +37,7 @@
 	<br>
 	<div class="col-sm-offset-1 col-sm-11">
 	<form action="login.html" method="post">
-		<input type="submit" value="ログアウト" class="btn btn-default">
+		<input type="submit" value="ログアウト" class="btn btn-default" onclick="myEnter()">
 	</form>
 	</div>
 	<br>
