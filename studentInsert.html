@@ -31,13 +31,13 @@ function check(){
 	if(flag){
 
 		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
-		return false; // 更新を中止
+		return false; // 登録を中止
 
 	}
 	else{
 
-		window.alert('更新しました');
-		return true; // 更新を実行
+		window.alert('登録しました');
+		return true; // 登録を実行
 
 	}
 
@@ -48,7 +48,7 @@ function check(){
 <body>
 <form class="form-hrizonatal" method="POST" action="menu.html" name="form1" onSubmit="return check()">
 	<h4>
-		登録を行います<br> 登録情報を入力して登録を押してください。
+		登録を行います。<br> 登録情報を入力して登録を押してください。
 	</h4>
 	<div class="col-sm-offset-1 col-sm-10">
 		<table class="table">
