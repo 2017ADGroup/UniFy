@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>教室予約登録</title>
+<title>教室予約</title>
 <style type="text/css">
 
 img {
@@ -55,14 +55,14 @@ function check(){
 <h4>使用したい教室を検索してください</h4>
 <form class="form-horizontal" method="POST">
 			<div class="form-group">
-				<label for="roomName" class=" col-sm-3 control-label">教室名</label>
+				<label for="roomName" class=" col-sm-4 control-label">教室名</label>
 				<div class="col-sm-5">
 					<input type="text" name="name" class="form-control" id="roomName" placeholder="教室名">
 				</div>
 			</div>
 			
 						<div class="form-group">
-				<label for="SCALE" class="col-sm-3 control-label">規模</label>
+				<label for="SCALE" class="col-sm-4 control-label">規模</label>
 				<div class="col-sm-2">
 					<input type="text" name="scale" class="form-control" id="SCALE" placeholder="人数">
 				</div>
@@ -75,12 +75,12 @@ function check(){
 			</div>
 			
 						<div class="form-group">
-				<label for="FIXTURES" class="col-sm-3 control-label">備品</label>
+				<label for="FIXTURES" class="col-sm-4 control-label">備品</label>
 				<div class="col-sm-5">
 					<input type="text" name="fixtures" class="form-control" id="FIXTURES" placeholder="備品">
 				</div>
 			</div>
-		<div class="col-sm-offset-3 col-sm-9">
+		<div class="col-sm-offset-5 col-sm-7">
 			<input type="submit" class="btn btn-info" value="検索" onclick="myEnter()">
 			</div>
 			<br>
@@ -128,7 +128,7 @@ function check(){
 </table>
 </div>
  <div class="form-group">
- <label for="PUTRPOSE" class="col-sm-4 control-label">使用目的</label>
+ <label for="PUTRPOSE" class="col-sm-5 control-label">使用目的</label>
  <div class="col-sm-1">
 <select class="form-control" id="PURPOSE">
 	<option>7</option>
@@ -172,7 +172,7 @@ function check(){
 </form>
 		<form class="form-horizontal" method="POST" action="menu.html" name="form1" onSubmit="return check()">
  <div class="form-group">
- <label for="PUTRPOSE" class="col-sm-3 control-label">使用目的</label>
+ <label for="PUTRPOSE" class="col-sm-4 control-label">使用目的</label>
  <div class="col-sm-5">
 <select class="form-control" id="PURPOSE">
 	<option>講義</option>
@@ -182,13 +182,13 @@ function check(){
 </select>
 </div></div>
 			<div class="form-group">
-				<label for="NUMBER" class=" col-sm-3 control-label">使用人数</label>
+				<label for="NUMBER" class=" col-sm-4 control-label">使用人数</label>
 				<div class="col-sm-5">
 					<input type="text" name="name" class="form-control" id="NUMBER" placeholder="使用人数">
 				</div>
 			</div>
 			 <div class="form-group">
-<label for="FIXTURES" class=" col-sm-3 control-label">備品使用</label>
+<label for="FIXTURES" class=" col-sm-4 control-label">備品使用</label>
  <div class="col-sm-5">
   <div class="checkbox">
     <label>
@@ -200,14 +200,14 @@ function check(){
   </div></div></div>
   
 			<div class="form-group">
-				<label for="REMARKS" class="col-sm-3 control-label">備考</label>
+				<label for="REMARKS" class="col-sm-4 control-label">備考</label>
 				<div class="col-sm-5">
 						<textarea name="remarks" rows="4" class="form-control" id="REMARKS" 
 						placeholder="その他何かあれば書いてください" ></textarea>
 				</div>
 			</div>
 
-		<div class="col-sm-offset-4 col-sm-8">
+		<div class="col-sm-offset-5 col-sm-7">
 			  <div class="checkbox">
     		<label>
       			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
