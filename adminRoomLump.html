@@ -11,23 +11,23 @@
 <!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript"> 
-
+<!--
 function check(){
 
-	var flag1 = 0;
+	var flag = 0;
 
 	// 設定開始（チェックする項目を設定してください）
 
 	if(!document.form1.check1.checked){
 
-		flag1 = 1;
+		flag = 1;
 
 	}
 
 	// 設定終了
 
 
-	if(flag1){
+	if(flag){
 
 		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
 		return false; // 確認を中止
@@ -41,10 +41,11 @@ function check(){
 	}
 
 }
-
+// -->
 </script>
 </head>
 <body>
+<form class="form-hrizonatal" method="POST" action="adminRoomLump.html" name="form1" onSubmit="return check()">
 	<fieldset>
 		<table class="table">
 			<caption>予約更新・削除</caption>
@@ -291,17 +292,17 @@ function check(){
      <div class="col-sm-offset-5 col-sm-7">
 			  <div class="checkbox">
     		<label>
-      			<input type="checkbox"> この内容でよろしいですか？
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
     		</label>
   	</div>
   	     </div>
   </div>
-<div class="col-sm-offset-5 col-sm-1">
-<input type="submit" class="btn btn-info" name="button" value="戻る"
+	<div class="col-sm-offset-5 col-sm-1">
+		<input type="submit" class="btn btn-info" name="button" value="戻る"
 				onclick="location.href='updateInput.jsp'; return false;">
-				</div>
-				<div class="col-sm-6">
-<input type="submit" class="btn btn-danger"value="実行">
+	</div>
+	<div class="col-sm-6">
+		<input type="submit" class="btn btn-danger"value="実行">
 	</div>
 	<br>
 	<br>
@@ -309,5 +310,6 @@ function check(){
 	<div class="col-sm-offset-1 col-sm-11">
 		<a href="adminMenu.html" class="btn btn-default">Menu</a>
 	</div>
+</form>
 </body>
 </html>
