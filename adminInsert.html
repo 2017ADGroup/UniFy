@@ -9,41 +9,42 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript"> 
-
+<!--
 function check(){
 
-	var flag1 = 0;
+	var flag = 0;
 
 	// 設定開始（チェックする項目を設定してください）
 
 	if(!document.form1.check1.checked){
 
-		flag1 = 1;
+		flag = 1;
 
 	}
 
 	// 設定終了
 
 
-	if(flag1){
+	if(flag){
 
 		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
-		return false; // 確認を中止
+		return false; // 更新を中止
 
 	}
 	else{
-	
-		window.alert('確認しました');
-		return true; // 確認を実行
+
+		window.alert('更新しました');
+		return true; // 更新を実行
+
 	}
 
 }
-
+// -->
 </script>
 </head>
 <body>
+<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
 <h2 style="text-align: center;">管理者登録</h2>
-		<form class="form-hrizonatal" method="POST" action="adminMenu.html" name="form1" onSubmit="return check()">
 		<div class="col-sm-offset-1 col-sm-10">
 		<table class="table">
 		<caption>団体・教員登録</caption>
@@ -109,7 +110,7 @@ function check(){
      <div class="col-sm-offset-5 col-sm-7">
 			  <div class="checkbox">
     		<label>
-      			<input name="check" type="checkbox"> この内容でよろしいですか？
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
     		</label>
   	</div>
   	     </div>
@@ -128,5 +129,6 @@ function check(){
 	<div class="col-sm-offset-1 col-sm-11">
 		<a href="index" class="btn btn-default">Menu</a>
 	</div>
+</form>
 </body>
 </html>
