@@ -22,18 +22,19 @@ alert("登録しました。");
 		登録を行います<br> 登録情報を入力して登録を押してください。
 	</h4>
 	<form action="menu.html" method="post">
+	<div class="col-sm-offset-1 col-sm-10">
 		<table class="table">
 		<caption>生徒登録</caption>
 			<thead>
 				<tr>
-<<<<<<< HEAD
+
 					<th  class="col-sm-4">ID</th>
 					<th  class="col-sm-4">名前</th>
-=======
+
 					<th>ID</th>
 					<th>名前</th>
 					<th>PASS</th>
->>>>>>> 6b31837d63f8c044f116ebc9b057670da5eee2b1
+
 				</tr>
 			</thead>
 			<tbody>
@@ -47,14 +48,16 @@ alert("登録しました。");
 				</tr>
 			</tbody>
 		</table>
-  		<div class="col-sm-1">
-			<input type="submit" class="btn btn-danger" value="登録" onclick="myEnter()">
-		</div>
+		 <div class="col-sm-offset-5 col-sm-7">
 		<div class="checkbox">
     		<label>
       			<input type="checkbox"> この内容でよろしいですか？
     		</label>
  		</div>
+  		<div class="col-sm-1">
+			<input type="submit" class="btn btn-danger" value="登録" onclick="myEnter()">
+		</div>
+		</div>
 	</form>
 	<br>
 	<br>
@@ -62,6 +65,6 @@ alert("登録しました。");
 	<div>
 		<a href="menu.html" class="btn btn-default">Menu</a>
 	</div>
-
+</div>
 </body>
 </html>
