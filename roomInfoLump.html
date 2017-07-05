@@ -14,9 +14,39 @@
 function myEnter(){
 alert("削除しました。"); 
 }
+function check(){
+
+	var flag = 0;
+
+	// 設定開始（チェックする項目を設定してください）
+
+	if(!document.form1.check1.checked){
+
+		flag = 1;
+
+	}
+
+	// 設定終了
+
+
+	if(flag){
+
+		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
+		return false; // 確認を中止
+
+	}
+	else{
+
+		window.alert('確認しました');
+		return true; // 確認を実行
+
+	}
+
+}
 // --></script>
 </head>
 <body>
+<form class="form-hrizonatal" method="POST" action="roomInfoLump.html" name="form1" onSubmit="return check()">
 	<h4>
 	更新・削除を行います<br>
 	削除をクリックすると教室情報の削除が行われます<br>
@@ -83,7 +113,7 @@ alert("削除しました。");
       <div class="col-sm-offset-5 col-sm-7">
 		 <div class="checkbox">
     		<label>
-      			<input type="checkbox">この内容でよろしいですか？
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
     		</label>
   		</div>
   	</div>
@@ -104,8 +134,6 @@ alert("削除しました。");
 	</div>
 		  </div>
   </div>
-	</form>
-	
-
+</form>
 </body>
 </html>
