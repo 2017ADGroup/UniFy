@@ -19,7 +19,7 @@ alert("予約しました。");
 <body>
 <form id="reserveUpdateForm" action="roomUpdateConfirm.html" method="post">
 	<fieldset>
-		<table class="table" border="1">
+		<table class="table">
 			<caption>予約一覧</caption>
 			<thead>
 				<tr>
@@ -70,27 +70,24 @@ alert("予約しました。");
 							<option>課外活動</option>
 							<option>備品整備</option>
 							<option>その他(備考欄記述)</option>
-						</select>/<br>
-						<input name="ninnzuu" type="number" value="100">人
+						</select>
+						<input name="ninnzuu" type="number" value="100">
 					</td>
 					<td>
-						<table>
-							<tr>
-								<td>プロジェクター,<br><input type="checkbox" name="bihinn" value="1"></td>
-								<td>アンプ,<br><input type="checkbox" name="bihinn" value="2"</td>
-								<td>プロジェクター,<br><input type="checkbox" name="bihinn" value="3"></td>
-								<td>プロジェクター,<br><input type="checkbox" name="bihinn" value="4"></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="5"></td>
-							<tr>
-								<td>プロジェクター,<br><input type="checkbox" name="bihinn" value="6"></td>
-								<td>プロジェクター,<br><input type="checkbox" name="bihinn" value="7"></td>
-								<td>プロジェクター,<br><input type="checkbox" name="bihinn" value="8"></td>
-								<td>プロジェクター,<br><input type="checkbox" name="bihinn" value="9"></td>
-								<td>プロジェクター<br><input type="checkbox" name="bihinn" value="10"></td>
-							</tr>
-						</table>
+								プロジェクター<input type="checkbox" name="bihinn" value="1">
+								アンプ<input type="checkbox" name="bihinn" value="2"
+								プロジェクター<input type="checkbox" name="bihinn" value="3">
+								プロジェクター<input type="checkbox" name="bihinn" value="4">
+								プロジェクター<br><input type="checkbox" name="bihinn" value="5">
+
+								プロジェクター<input type="checkbox" name="bihinn" value="6">
+								プロジェクター<input type="checkbox" name="bihinn" value="7">
+								プロジェクター<input type="checkbox" name="bihinn" value="8">
+								プロジェクター<input type="checkbox" name="bihinn" value="9">
+								プロジェクター<br><input type="checkbox" name="bihinn" value="10">
 					</td>
-					<td><textarea name="bikou" rows="8" cols="20"></textarea></td>
+
+					<td><textarea name="bikou" rows="4" cols="26"></textarea></td>
 					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
 				</tr>
 				<tr>
