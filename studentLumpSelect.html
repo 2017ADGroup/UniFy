@@ -12,47 +12,38 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
-
-			
-
 <script type="text/javascript"> 
-
+<!--
 function check(){
 
-	var flag1 = 0;
+	var flag = 0;
 
 	// 設定開始（チェックする項目を設定してください）
 
 	if(!document.form1.check1.checked){
 
-		flag1 = 1;
+		flag = 1;
 
 	}
 
 	// 設定終了
 
 
-
-	if(flag1){
-
-
-
-	if(flag1){
-
+	if(flag){
 
 		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
-		return false; // 確認を中止
+		return false; // 実行を中止
 
 	}
 	else{
 
-		window.alert('確認しました');
-		return true; // 確認を実行
+		window.alert('実行しました');
+		return true; // 実行
 
 	}
 
 }
-
+// -->
 </script>
 </head>
 <body>
@@ -90,7 +81,7 @@ function check(){
 						<input type="text" name="name" class="form-control" readonly="readonly">
 					</td>
 					<td>
-						<input type="checkbox" name="check1" value="ok">
+						<input type="checkbox">
 					</td>
 				</tr>
 			</tbody>		
@@ -101,7 +92,7 @@ function check(){
      <div class="col-sm-offset-5 col-sm-7">
 			  <div class="checkbox">
     		<label>
-      			<input type="checkbox"> この内容でよろしいですか？
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
     		</label>
   	</div>
   	     </div>
@@ -120,9 +111,5 @@ function check(){
 	<div class="col-sm-offset-1 col-sm-11">
 		<a href="index" class="btn btn-default">Menu</a>
 	</div>
-
-
-
-
 </body>
 </html>
