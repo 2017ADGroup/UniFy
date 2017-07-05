@@ -58,7 +58,7 @@ alert("更新しました。");
 								<input type="checkbox" name="bihinn" value="10" disabled='disabled'>プロジェクター</td>
 					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
 					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
-					<td><button type="submit" name="reserve" value="1">更新</button></td>
+					<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 				</tr>
 				<tr>
 					<td>7/11</td>
@@ -85,7 +85,7 @@ alert("更新しました。");
 								<input type="checkbox" name="bihinn" value="10" disabled='disabled'>プロジェクター</td>
 					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
 					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
-					<td><button type="submit" name="reserve" value="1">更新</button></td>
+					<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 				</tr>
 				<tr>
 					<td>7/11</td>
@@ -112,7 +112,7 @@ alert("更新しました。");
 								<input type="checkbox" name="bihinn" value="10" disabled='disabled'>プロジェクター</td>
 					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
 					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
-					<td><button type="submit" name="reserve" value="1">更新</button></td>
+					<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 				</tr>
 				<tr>
 					<td>7/11</td>
@@ -139,11 +139,29 @@ alert("更新しました。");
 								<input type="checkbox" name="bihinn" value="10" disabled='disabled'>プロジェクター</td>
 					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
 					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
-					<td><button type="submit" name="reserve" value="1">更新</button></td>
+					<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 				</tr>
 				</tbody>
 			</table>
 	</form>
-<a href="menu.html">MENU</a>
+ <div class="form-group">
+      <div class="col-sm-offset-5 col-sm-7">
+		 <div class="checkbox">
+    		<label>
+      			<input type="checkbox">この内容でよろしいですか？
+    		</label>
+  		</div>
+  	</div>
+  </div>
+  	<div class="col-sm-offset-5 col-sm-1">
+		<input type="submit" class="btn btn-info" name="button" value="戻る"
+						onclick="location.href='updateInput.jsp'; return false;">
+						</div>
+						<div class="col-sm-6">
+		<input type="submit" class="btn btn-danger"value="削除">
+	</div>
+	<div class="col-sm-offset-1 col-sm-11">
+		<a href="menu.html" class="btn btn-default">Menu</a>
+	</div>
 </body>
 </html>
