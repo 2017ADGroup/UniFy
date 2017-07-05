@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>教室情報更新削除画面</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript"><!--
+function myEnter(){
+alert("削除しました。"); 
+}
+// --></script>
+</head>
+<body>
+	<h4>
+	更新・削除を行います<br>
+	削除をクリックすると教室情報の削除が行われます<br>
+	更新ボタンを押すと各教室情報の更新が行えます
+	</h4>
+
+	<form>
+	<div class="col-sm-offset-1 col-sm-10">
+		<table class="table">
+		<caption>教室情報</caption>
+			<thead>
+				<tr>
+					<th>名前</th>
+					<th>削除</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td>A教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+					</tr>
+										<tr>
+						<td>B教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+					</tr>
+										<tr>
+						<td>C教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+					</tr>
+										<tr>
+						<td>D教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+					</tr>
+										<tr>
+						<td>E教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+					</tr>
+										<tr>
+						<td>F教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+					</tr>
+										<tr>
+						<td>G教室</td>
+						<td><input type="checkbox"
+							name="lumpDel" ></td>
+					</tr>
+			</tbody>
+		</table>
+		</div>
+					  <div class="form-group">
+     <div class="col-sm-offset-2 col-sm-10">
+			  <div class="checkbox">
+    		<label>
+<<<<<<< HEAD
+      			<input type="checkbox"> チェック項目を削除してよろしいですか？
+=======
+      			<input type="checkbox">この内容でよろしいですか？
+>>>>>>> 6b31837d63f8c044f116ebc9b057670da5eee2b1
+    		</label>
+  	</div>
+  	     </div>
+  </div>
+  		<div class="col-sm-offset-2 col-sm-10">
+		<br> <input type="submit" class="btn btn-danger" value="削除" onclick="myEnter()">
+		</div>
+	</form>
+	<br>
+	<br>
+	<br>
+	<div class="col-sm-offset-1 col-sm-11">
+		<a href="index" class="btn btn-default">Menu</a>
+	</div>
+
+</body>
+</html>
