@@ -11,13 +11,41 @@
 <!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript"><!--
-function myEnter(){
-alert("更新しました。"); 
+<!--
+function check(){
+
+	var flag = 0;
+
+	// 設定開始（チェックする項目を設定してください）
+
+	if(!document.form1.check1.checked){
+
+		flag = 1;
+
+	}
+
+	// 設定終了
+
+
+	if(flag){
+
+		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
+		return false; // 更新を中止
+
+	}
+	else{
+
+		window.alert('更新しました');
+		return true; // 更新を実行
+
+	}
+
 }
-// --></script>
+// -->
+</script>
 </head>
 <body>
-<form id="reserveUpdateForm" action="roomUpdateConfirm.html" method="post">
+<form class="form-hrizonatal" method="POST" action="roomUpdateConfirm.html" name="form1" onSubmit="return check()">
 		<table class="table">
 			<caption>予約一覧</caption>
 			<thead>
@@ -143,25 +171,25 @@ alert("更新しました。");
 				</tr>
 				</tbody>
 			</table>
-	</form>
  <div class="form-group">
       <div class="col-sm-offset-5 col-sm-7">
 		 <div class="checkbox">
     		<label>
-      			<input type="checkbox">この内容でよろしいですか？
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
     		</label>
   		</div>
   	</div>
   </div>
   	<div class="col-sm-offset-5 col-sm-1">
 		<input type="submit" class="btn btn-info" name="button" value="戻る"
-						onclick="location.href='updateInput.jsp'; return false;">
-						</div>
-						<div class="col-sm-6">
+			onclick="location.href='updateInput.jsp'; return false;">
+	</div>
+	<div class="col-sm-6">
 		<input type="submit" class="btn btn-danger"value="削除">
 	</div>
 	<div class="col-sm-offset-1 col-sm-11">
 		<a href="menu.html" class="btn btn-default">Menu</a>
 	</div>
+</form>
 </body>
 </html>

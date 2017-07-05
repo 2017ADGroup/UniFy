@@ -29,45 +29,52 @@ alert("削除しました。");
 		<caption>教室情報</caption>
 			<thead>
 				<tr>
-					<th>名前</th>
-					<th>削除</th>
+					<th class="col-sm-5">名前</th>
+					<th class="col-sm-5">削除</th>
+					<th class="col-sm-5"></th>
 				</tr>
 			</thead>
 			<tbody>
 					<tr>
 						<td>A教室</td>
-						<td ><input type="checkbox"
-							name="lumpDel" ></td>
+						<td ><input type="checkbox" name="lumpDel" ></td>
+						<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>	
 					</tr>
 										<tr>
 						<td>B教室</td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
+								<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>C教室</td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
+								<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>D教室</td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
+								<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>E教室</td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
+								<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>F教室</td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
+								<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>G教室</td>
 						<td><input type="checkbox"
 							name="lumpDel" ></td>
+								<td><button type="submit" class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 			</tbody>
 		</table>
@@ -83,11 +90,11 @@ alert("削除しました。");
   </div>
   <br>
 <div class="col-sm-offset-5 col-sm-1">
-<input type="submit" class="btn btn-danger" name="button" value="実行"
-				onclick="location.href='updateInput.jsp'; return false;">
-				</div>
-				<div class="col-sm-6">
-<input type="submit" class="btn btn-danger"value="更新">
+		<input type="submit" class="btn btn-info" name="button" value="戻る"
+						onclick="location.href='updateInput.jsp'; return false;">
+						</div>
+						<div class="col-sm-6">
+		<input type="submit" class="btn btn-danger"value="削除">
 	</div>
 	<br>
 	<br>
