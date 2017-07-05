@@ -60,7 +60,7 @@ function check(){
 					<input type="text" name="scale" class="form-control" id="SCALE" placeholder="人数">
 				</div>
 				<div class="col-sm-1">
-					～
+					<b>～</b>
 				</div>
 				<div class="col-sm-2">
 					<input type="text" name="fixtures" class="form-control" id="FIXTURES" placeholder="人数">
@@ -124,20 +124,30 @@ function check(){
 </table>
 </div>
 </form>
-<form name="reserveForm" method="post" action="menu.html" onSubmit="return check()">
-<p>使用予定日<br>
-	<select>
+<form class="form-horizontal" name="reserveForm" method="post" action="menu.html" onSubmit="return check()">
+ <div class="form-group">
+ <label for="PUTRPOSE" class="col-sm-3 control-label">使用目的</label>
+ <div class="col-sm-1">
+<select class="form-control" id="PURPOSE">
 	<option>7</option>
 	<option>8</option>
-	</select>月
-	<select>
+	</select>
+	</div>
+	<div class="col-sm-1">
+	<b>月</b>
+	</div>
+	<div class="col-sm-1">
+	<select class="form-control" id="PURPOSE">
 	<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
 	<option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option>
 	<option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option>
 	<option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option>
 	<option>29</option><option>30</option><option>31</option>
-	</select>日
-
+	</select>
+</div>
+	<div class="col-sm-1">
+	<b>日</b>
+	</div></div>
 
 <div class="col-sm-offset-1 col-sm-10">
 <table class="table">
@@ -161,16 +171,32 @@ function check(){
 
 
 
-<p>使用目的
-<select>
+
+ <div class="form-group">
+ <label for="PUTRPOSE" class="col-sm-3 control-label">使用目的</label>
+ <div class="col-sm-5">
+<select class="form-control" id="PURPOSE">
 	<option>講義</option>
 	<option>課外活動</option>
 	<option>備品整備</option>
 	<option>その他(備考欄記述)</option>
 </select>
+</div></div>
 
-<p>使用人数
-<input type=number name="ninnzuu">
+			<div class="form-group">
+				<label for="NUMBER" class=" col-sm-3 control-label">使用人数</label>
+				<div class="col-sm-5">
+					<input type="text" name="name" class="form-control" id="NUMBER" placeholder="使用人数">
+				</div>
+			</div>
+			
+  <div class="checkbox">
+    <label>
+      <input type="checkbox">プロジェクター
+    </label>
+  </div>
+			
+			
 <table>
 	<tr>
 		<td>備品使用</td>
