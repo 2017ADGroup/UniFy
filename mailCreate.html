@@ -7,19 +7,24 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript"><!--
+function myEnter(){
+alert("更新しました。"); 
+}
+// --></script>
 </head>
 <body>
 <h2 style="text-align: center;">メール新規作成</h2>
 <br>
-	<form class="form-horizontal">
+	<form class="form-horizontal" action="menu.html">
 		<fieldset>
               <div class="form-group">
                 <label for="SELECT" class="col-sm-3 control-label">宛先</label>
                 <div class="col-sm-6">
                   <select class="form-control" id="SELECT">
-<option value="1">浅井</option>
-<option value="2">市川</option>
-<option value="3">岡本</option>
+<option value="1">浅井(ID:00G0011)</option>
+<option value="2">市川(ID:00E0024)</option>
+<option value="3">岡本(ID:00M0005)</option>
 </select></div></div>
 			<div class="form-group">
 				<label for="SUBJECT" class="col-sm-3 control-label">件名</label>
@@ -37,7 +42,7 @@
 			</fieldset>
 			<br>
 <div class="col-sm-offset-3 col-sm-9">
-		<input type="submit" class="btn btn-success" value="送信" onclick="location.href='menu.html'; return false;">
+		<input type="submit" class="btn btn-success" value="送信" onclick="myEnter()">
 		</div>
 	</form>
 	<br>
