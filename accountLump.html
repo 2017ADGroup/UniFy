@@ -57,6 +57,7 @@ function check(){
 				<tr>
 					<th>ID</th>
 					<th>名前</th>
+					<th>属性</th>
 					<th>予約権限</th>
 					<th>削除</th> 
 				</tr>
@@ -68,6 +69,11 @@ function check(){
 					</td>
 					<td>
 						<input type="text" name="name" class="form-control" value='野球部' readonly='readonly'>
+					</td>
+					<td>
+						<select name="authority" class="form-control" disabled>
+						<option value="1" selected>団体</option>
+						<option value="1">教員</option>
 					</td>
 					<td>
 						<select name="authority" class="form-control">
@@ -85,10 +91,16 @@ function check(){
 					<td>
 						<input type="text" name="name" class="form-control" value='旅行部' readonly='readonly'>
 					</td>
+										<td>
+						<select name="authority" class="form-control" disabled>
+						<option value="1" selected>団体</option>
+						<option value="1">教員</option>
+					</td>
 					<td>
 						<select name="authority" class="form-control">
 						<option value="1">有効</option>
 						<option value="1" selected>無効</option>
+						</select>
 					</td>
 					<td>
 						<input type="checkbox">
@@ -101,10 +113,16 @@ function check(){
 					<td>
 						<input type="text" name="name" class="form-control" value='サイクリング部' readonly='readonly'>
 					</td>
+										<td>
+						<select name="authority" class="form-control" disabled>
+						<option value="1" selected>団体</option>
+						<option value="1">教員</option>
+					</td>
 					<td>
 						<select name="authority" class="form-control">
 						<option value="1">有効</option>
 						<option value="1">無効</option>
+						</select>
 					</td>
 					<td>
 						<input type="checkbox">
@@ -117,10 +135,16 @@ function check(){
 					<td>
 						<input type="text" name="name" class="form-control" value='合唱部' readonly='readonly'>
 					</td>
+										<td>
+						<select name="authority" class="form-control" disabled>
+						<option value="1" selected>団体</option>
+						<option value="1">教員</option>
+					</td>
 					<td>
 						<select name="authority" class="form-control">
 						<option value="1">有効</option>
 						<option value="1">無効</option>
+						</select>
 					</td>
 					<td>
 						<input type="checkbox">
@@ -133,10 +157,16 @@ function check(){
 					<td>
 						<input type="text" name="name" class="form-control" value='佐川哲夫' readonly='readonly'>
 					</td>
+										<td>
+						<select name="authority" class="form-control" disabled>
+						<option value="1">団体</option>
+						<option value="1" selected>教員</option>
+					</td>
 					<td>
 						<select name="authority" class="form-control">
 						<option value="1">有効</option>
 						<option value="1">無効</option>
+						</select>
 					</td>
 					<td>
 						<input type="checkbox">
