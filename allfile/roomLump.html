@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>予約更新・削除</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript"><!--
+<!--
+function check(){
+
+	var flag = 0;
+
+	// 設定開始（チェックする項目を設定してください）
+
+	if(!document.form1.check1.checked){
+
+		flag = 1;
+
+	}
+
+	// 設定終了
+
+
+	if(flag){
+
+		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
+		return false; // 更新を中止
+
+	}
+	else{
+
+		window.alert('削除しました');
+		return true; // 更新を実行
+
+	}
+
+}
+// -->
+</script>
+</head>
+<body>
+<form class="form-hrizonatal" method="POST" action="roomLump_ver2.html" name="form1" onSubmit="return check()">
+		<table class="table">
+			<caption>予約一覧</caption>
+			<thead>
+				<tr>
+					<th class="col-sm-1">月日</th>
+					<th class="col-sm-1">時間</th>
+					<th class="col-sm-1">教室名</th>
+					<th class="col-sm-2">使用目的/使用人数</th>
+					<th class="col-sm-3">備品</th>
+					<th class="col-sm-2">備考</th>
+					<th class="col-sm-1">予約取消</th>
+					<th class="col-sm-1"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>7/11</td>
+					<td>3限</td>
+					<td>A教室</td>
+					<td>
+						<select disabled='disabled'>
+							<option>講義</option>
+							<option>課外活動</option>
+							<option>備品整備</option>
+							<option>その他(備考欄記述)</option>
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
+					</td>
+						<td>
+							<textarea name="bihinn" rows="4" cols="26" readonly='readonly'></textarea>
+						</td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
+					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
+					<td><a href='roomUpdateConfirm.html' class="btn btn-danger">更新</a></td>
+				</tr>
+				<tr>
+					<td>7/11</td>
+					<td>3限</td>
+					<td>A教室</td>
+					<td>
+						<select disabled='disabled'>
+							<option>講義</option>
+							<option>課外活動</option>
+							<option>備品整備</option>
+							<option>その他(備考欄記述)</option>
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
+					</td>
+						<td>
+							<textarea name="bihinn" rows="4" cols="26" readonly='readonly'></textarea>
+						</td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
+					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
+					<td><a href='roomUpdateConfirm.html' class="btn btn-danger">更新</a></td>
+				</tr>
+				<tr>
+					<td>7/11</td>
+					<td>3限</td>
+					<td>A教室</td>
+					<td>
+						<select disabled='disabled'>
+							<option>講義</option>
+							<option>課外活動</option>
+							<option>備品整備</option>
+							<option>その他(備考欄記述)</option>
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
+					</td>
+						<td>
+							<textarea name="bihinn" rows="4" cols="26" readonly='readonly'></textarea>
+						</td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
+					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
+					<td><a href='roomUpdateConfirm.html' class="btn btn-danger">更新</a></td>
+				</tr>
+				<tr>
+					<td>7/11</td>
+					<td>3限</td>
+					<td>A教室</td>
+					<td>
+						<select disabled='disabled'>
+							<option>講義</option>
+							<option>課外活動</option>
+							<option>備品整備</option>
+							<option>その他(備考欄記述)</option>
+						</select>
+						<input name="ninnzuu" type="number" value="100" disabled='disabled' />
+					</td>
+						<td>
+							<textarea name="bihinn" rows="4" cols="26" readonly='readonly'></textarea>
+						</td>
+					<td><textarea name="bikou" rows="4" cols="26" readonly='readonly'></textarea></td>
+					<td><input name="reserveDelete" type="checkbox" value="1"/><input type="hidden" name="delete" value="on"/></td>
+					<td><a href='roomUpdateConfirm.html' class="btn btn-danger">更新</a></td>
+				</tr>
+				</tbody>
+			</table>
+ <div class="form-group">
+      <div class="col-sm-offset-5 col-sm-7">
+		 <div class="checkbox">
+    		<label>
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
+    		</label>
+  		</div>
+  	</div>
+  </div>
+	<div class="col-sm-offset-6 col-sm-6">
+		<input type="submit" class="btn btn-danger"value="削除">
+	</div>
+	<div class="col-sm-offset-1 col-sm-11">
+		<a href="menu.html" class="btn btn-default">Menu</a>
+	</div>
+</form>
+</body>
+</html>
