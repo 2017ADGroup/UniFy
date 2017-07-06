@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>教室情報更新削除画面</title>
+<!-- BootstrapのCSS読み込み -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- jQuery読み込み -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript"><!--
+function myEnter(){
+alert("削除しました。"); 
+}
+function check(){
+
+	var flag = 0;
+
+	// 設定開始（チェックする項目を設定してください）
+
+	if(!document.form1.check1.checked){
+
+		flag = 1;
+
+	}
+
+	// 設定終了
+
+
+	if(flag){
+
+		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
+		return false; // 確認を中止
+
+	}
+	else{
+
+		window.alert('削除しました');
+		return true; // 確認を実行
+
+	}
+
+}
+// --></script>
+</head>
+<body>
+<form class="form-hrizonatal" method="POST" action="roomInfoLump.html" name="form1" onSubmit="return check()">
+	<h4>
+	更新・削除を行います<br>
+	削除をクリックすると教室情報の削除が行われます<br>
+	更新ボタンを押すと各教室情報の更新が行えます
+	</h4>
+
+	<form>
+	<div class="col-sm-offset-1 col-sm-10">
+		<table class="table">
+		<caption>教室情報</caption>
+			<thead>
+				<tr>
+					<th class="col-sm-5">名前</th>
+					<th class="col-sm-5">削除</th>
+					<th class="col-sm-5"></th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td>A教室</td>
+						<td ><input type="checkbox" name="lumpDel" ></td>
+						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>	
+					</tr>
+										<tr>
+						<td>B教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
+					</tr>
+										<tr>
+						<td>C教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
+					</tr>
+										<tr>
+						<td>D教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
+					</tr>
+										<tr>
+						<td>E教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
+					</tr>
+										<tr>
+						<td>F教室</td>
+						<td ><input type="checkbox"
+							name="lumpDel" ></td>
+						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
+					</tr>
+										<tr>
+						<td>G教室</td>
+						<td><input type="checkbox"
+							name="lumpDel" ></td>
+						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
+					</tr>
+			</tbody>
+		</table>
+		</div>
+ <div class="form-group">
+      <div class="col-sm-offset-5 col-sm-7">
+		 <div class="checkbox">
+    		<label>
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
+    		</label>
+  		</div>
+  	</div>
+  </div>
+  <br>
+	<div class="col-sm-offset-6 col-sm-6">
+		<input type="submit" class="btn btn-danger"value="削除">
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="col-sm-offset-1 col-sm-11">
+		<a href="menu.html" class="btn btn-default">Menu</a>
+	</div>
+		  </div>
+  </div>
+</form>
+</body>
+</html>

@@ -2,62 +2,102 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>教室予約登録</title>
+<title>教室予約</title>
 <style type="text/css">
-<!--
+
 img {
-width:150px;
-height:150px;
+width:210px;
+height:140px;
 ;}
 </style>
+<!-- BootstrapのCSS読み込み -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- jQuery読み込み -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
-
 <script type="text/javascript">
+<!--
 function check(){
+
 	var flag = 0;
-	if(!document.reserveForm.check.checked){
+
+	// 設定開始（チェックする項目を設定してください）
+
+	if(!document.form1.check1.checked){
+
 		flag = 1;
+
 	}
+
+	// 設定終了
+
+
 	if(flag){
+
 		window.alert('チェックされていません'); // チェックされていない場合は警告ダイアログを表示
-		return false; // 送信を中止
+		return false; // 登録を中止
+
 	}
 	else{
-		window.alert('予約を送信します');
-		return true; // 送信を実行
-	}
-}
-</script>
 
+		window.alert('登録しました');
+		return true; // 登録を実行
+
+	}
+
+}
+// -->
+</script>
 </head>
 <body>
-
-<form  action="roomInsert.html" method="post">
-<p>使用したい教室を検索してください</p>
-教室名<br>
-<input type="text" name="roomName"><br>
-規模<br>
-<input type="number" name="sizeMax">人～<input type="number" name="sizeMin">人<br>
-備品<br>
-<input type="text" name="goods"><br>
-<p><button type="submit">検索</button>
-</form>
-
-
-<form method="post" action="roomInsert.html">
-<table border="1">
+<h4>使用したい教室を検索してください</h4>
+<form class="form-horizontal" method="POST">
+			<div class="form-group">
+				<label for="roomName" class=" col-sm-4 control-label">教室名</label>
+				<div class="col-sm-5">
+					<input type="text" name="name" class="form-control" id="roomName" placeholder="教室名">
+				</div>
+			</div>
+			
+						<div class="form-group">
+				<label for="SCALE" class="col-sm-4 control-label">規模</label>
+				<div class="col-sm-2">
+					<input type="text" name="scale" class="form-control" id="SCALE" placeholder="人数">
+				</div>
+				<div class="col-sm-1">
+					<p style="text-align: center;"><b>～</b></p>
+				</div>
+				<div class="col-sm-2">
+					<input type="text" name="fixtures" class="form-control" id="FIXTURES" placeholder="人数">
+				</div>
+			</div>
+			
+						<div class="form-group">
+				<label for="FIXTURES" class="col-sm-4 control-label">備品</label>
+				<div class="col-sm-5">
+					<input type="text" name="fixtures" class="form-control" id="FIXTURES" placeholder="備品">
+				</div>
+			</div>
+		<div class="col-sm-offset-5 col-sm-7">
+			<input type="submit" class="btn btn-info" value="検索" onclick="myEnter()">
+			</div>
+			<br>
+<br>
+<div class="col-sm-offset-1 col-sm-10">
+<table class="table">
 	<tr>
 		<td>A教室</td><td>B教室</td><td>C教室</td><td>D教室</td>
 	</tr>
 	<tr>
-		<td><img border="1" src=""></td><td><img border="1" src=""></td><td><img border="1" src=""></td><td><img border="1" src=""></td>
+		<td><img border="1" src="image/bRoom.jpg"></td><td><img border="1" src="image/bRoom.jpg"></td><td><img border="1" src="image/bRoom.jpg"></td><td><img border="1" src="image/bRoom.jpg"></td>
 	</tr>
 	<tr>
 		<td>
 		規模:100人<br>
-		備品:プロジェクター
+		備品:プロジェクター、アンプ
+
 		</td>
 		<td>
 		規模:100人<br>
@@ -86,24 +126,32 @@ function check(){
 		</td>
 	</tr>
 </table>
-</form>
-<form name="reserveForm" method="post" action="roomInsert.html" onSubmit="return check()">
-<p>使用予定日<br>
-	<select>
+</div>
+ <div class="form-group">
+ <label for="PUTRPOSE" class="col-sm-5 control-label">使用目的</label>
+ <div class="col-sm-1">
+<select class="form-control" id="PURPOSE">
 	<option>7</option>
 	<option>8</option>
-	</select>月
-	<select>
+	</select>
+	</div>
+	<div class="col-sm-1">
+	<b>月</b>
+	</div>
+	<div class="col-sm-1">
+	<select class="form-control" id="PURPOSE">
 	<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
 	<option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option>
 	<option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option>
 	<option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option>
 	<option>29</option><option>30</option><option>31</option>
-	</select>日
-
-
-
-<table border="1">
+	</select>
+</div>
+	<div class="col-sm-1">
+	<b>日</b>
+	</div></div>
+<div class="col-sm-offset-1 col-sm-10">
+<table class="table">
 	<tr>
 		<th></th><th>1限</th><th>2限</th><th>3限</th><th>4限</th><th>5限</th><th>6限</th><th>7限以降</th>
 	</tr>
@@ -121,32 +169,60 @@ function check(){
 		<td><input type="checkbox" name="jikann" value="7"></td>
 	</tr>
 </table>
-
-
-
-<p>使用目的
-<select>
+</form>
+		<form class="form-horizontal" method="POST" action="menu.html" name="form1" onSubmit="return check()">
+ <div class="form-group">
+ <label for="PUTRPOSE" class="col-sm-4 control-label">使用目的</label>
+ <div class="col-sm-5">
+<select class="form-control" id="PURPOSE">
 	<option>講義</option>
 	<option>課外活動</option>
 	<option>備品整備</option>
 	<option>その他(備考欄記述)</option>
 </select>
+</div></div>
+			<div class="form-group">
+				<label for="NUMBER" class=" col-sm-4 control-label">使用人数</label>
+				<div class="col-sm-5">
+					<input type="text" name="name" class="form-control" id="NUMBER" placeholder="使用人数">
+				</div>
+			</div>
+			 <div class="form-group">
+<label for="FIXTURES" class=" col-sm-4 control-label">備品使用</label>
+ <div class="col-sm-5">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="FIXTURES">プロジェクター
+    </label>
+        <label>
+      <input type="checkbox" id="FIXTURES">アンプ
+    </label>
+  </div></div></div>
+  
+			<div class="form-group">
+				<label for="REMARKS" class="col-sm-4 control-label">備考</label>
+				<div class="col-sm-5">
+						<textarea name="remarks" rows="4" class="form-control" id="REMARKS" 
+						placeholder="その他何かあれば書いてください" ></textarea>
+				</div>
+			</div>
 
-<p>使用人数
-<input type=number name="ninnzuu">
-<table>
-	<tr>
-		<td>備品使用</td>
-	</tr>
-	<tr>
-		<td>プロジェクター</td><td><input type="checkbox" name="bihinn" value="1"></td>
-		<td>アンプ</td><td><input type="checkbox" name="bihinn" value="2"></td>
-	</tr>
-</table>
-<p>備考欄
-<br><textarea name="bikou" rows="4" cols="40"></textarea>
-<p><button type="submit">予約する</button> 入力内容を確認しました<input type="checkbox" name="check" value="check">
-</form>
-<a href="menu.html">メニューへ戻る</a>
+		<div class="col-sm-offset-5 col-sm-7">
+			  <div class="checkbox">
+    		<label>
+      			<input type="checkbox" name="check1" value="ok"> この内容でよろしいですか？
+    		</label>
+  		</div><br></div>
+  				<div class="col-sm-offset-5 col-sm-7">
+			<input type="submit" class="btn btn-danger" value="登録">
+			</div>
+			</form>
+	<div class="col-sm-offset-1 col-sm-11">
+	<br>
+	<br>
+	<br>
+		<a href="menu.html" class="btn btn-default">Menu</a>
+	</div>
+
 </body>
 </html>

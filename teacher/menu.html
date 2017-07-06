@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>メニュー</title>
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript"><!--
+function myEnter(){
+alert("ログアウトします"); 
+}
+// --></script>
+</head>
+<body>
+
+<h2 style="text-align: center;">マイページ</h2>
+<br>
+	<div class="col-sm-3">
+		<b>教室予約情報</b><br>
+		・<a href="roomInsert.html">教室予約</a><br>
+		・<a href="roomLump.html">予約内容更新、削除</a><br>
+		<b>ミニメール</b><br>
+		・<a href="mailCreate.html">メール新規作成</a><br>
+		・<a href="mail.html">受信ボックス</a><br>
+		<b>アカウント管理</b><br>
+		・<a href="myInfoUpdate.html">アカウント情報更新</a><br>
+		<br>
+		<form action="login.html" method="post">
+		<input type="submit" class="btn btn-default" value="ログアウト" onclick="myEnter()">
+		</form>
+	</div>
+	<div class="col-sm-offset-2 col-sm-6">
+	
+	<form class="form-inline" action="menu.html" method="get">
+	<div class="form-group">
+<select class="form-control" id="year" name="year">
+
+<option value="2007"
+
+>2007年</option>
+
+<option value="2008"
+
+>2008年</option>
+
+<option value="2009"
+
+>2009年</option>
+
+<option value="2010"
+
+>2010年</option>
+
+<option value="2011"
+
+>2011年</option>
+
+<option value="2012"
+
+>2012年</option>
+
+<option value="2013"
+
+>2013年</option>
+
+<option value="2014"
+
+>2014年</option>
+
+<option value="2015"
+
+>2015年</option>
+
+<option value="2016"
+
+>2016年</option>
+
+<option value="2017"
+
+selected
+
+>2017年</option>
+
+<option value="2018"
+
+>2018年</option>
+
+<option value="2019"
+
+>2019年</option>
+
+<option value="2020"
+
+>2020年</option>
+
+<option value="2021"
+
+>2021年</option>
+
+<option value="2022"
+
+>2022年</option>
+
+<option value="2023"
+
+>2023年</option>
+
+<option value="2024"
+
+>2024年</option>
+
+<option value="2025"
+
+>2025年</option>
+
+<option value="2026"
+
+>2026年</option>
+
+<option value="2027"
+
+>2027年</option>
+
+</select>
+</div>
+<div class="form-group">
+<select class="form-control" id="moneth" name="month">
+
+<option value="1"
+
+>1月</option>
+
+<option value="2"
+
+>2月</option>
+
+<option value="3"
+
+>3月</option>
+
+<option value="4"
+
+>4月</option>
+
+<option value="5"
+
+>5月</option>
+
+<option value="6"
+
+>6月</option>
+
+<option value="7"
+
+selected
+
+>7月</option>
+
+<option value="8"
+
+>8月</option>
+
+<option value="9"
+
+>9月</option>
+
+<option value="10"
+
+>10月</option>
+
+<option value="11"
+
+>11月</option>
+
+<option value="12"
+
+>12月</option>
+
+</select>
+</div>
+<input  class="btn btn-danger" type="submit" id="ok" name="ok" value="変更"/>
+
+</form>
+<br>
+</div>
+<div class="col-sm-8">
+		<table class="table table-bordered"><tr class="info"><th style="color:red;">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th style="color:blue;">土</th></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td><a href="menu.html">1</a></tr><tr><td><a href="menu.html">2</a><td><a href="menu.html">3</a><td><a href="menu.html">4</a><td><a href="menu.html">5</a><td><a href="menu.html">6</a><td><a href="menu.html">7</a><td><a href="menu.html">8</a></tr><tr><td><a href="menu.html">9</a><td><a href="menu.html">10</a><td><a href="menu.html">11</a><td><a href="menu.html">12</a><td><a href="menu.html">13</a><td><a href="menu.html">14</a><td><a href="menu.html">15</a></tr><tr><td><a href="menu.html">16</a><td><a href="menu.html">17</a><td><a href="menu.html">18</a><td><a href="menu.html">19</a><td><a href="menu.html">20</a><td><a href="menu.html">21</a><td><a href="menu.html">22</a></tr><tr><td><a href="menu.html">23</a><td><a href="menu.html">24</a><td><a href="menu.html">25</a><td><a href="menu.html">26</a><td><a href="menu.html">27</a><td><a href="menu.html">28</a><td><a href="menu.html">29</a></tr><tr><td><a href="menu.html">30</a><td><a href="menu.html">31</a><td></td><td></td><td></td><td></td><td></td></tr></table><br/>
+	</div>
+<div class="col-sm-offset-3 col-sm-8">
+		<table class="table table-bordered">
+	<tr class="info">
+		<th class="col-sm-1"></th><th class="col-sm-1">1限</th><th class="col-sm-1">2限</th><th class="col-sm-1">3限</th><th class="col-sm-1">4限</th><th class="col-sm-1">5限</th><th class="col-sm-1">6限</th><th class="col-sm-1">7限以降</th>
+	</tr>
+	<br>
+	<tr>
+		<th>A教室</th><td>〇</td><td>〇</td><td>	<br>	</td><td>	<br>	</td><td>	<br>	</td><td>	<br>	</td><td>	<br>	</td>
+	</tr>
+	<tr>
+		<th>B教室</th><td>	<br>	</td><td>	<br>	</td><td>	<br>	</td><td>	<br>	</td><td>〇</td><td>〇</td><td>	<br>	</td>
+	<tr>
+	</tr>
+		<th>C教室</th><td>	<br>	</td><td>	<br>	</td><td>〇</td><td>	<br>	</td><td>	<br>	</td><td>	<br>	</td><td>	<br>	</td>
+	</tr>
+	</table>
+	</div>
+
+
+
+</body>
+</html>
