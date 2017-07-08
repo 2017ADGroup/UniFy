@@ -46,14 +46,12 @@ function check(){
 // --></script>
 </head>
 <body>
-<h2 style="text-align: center;">教室情報更新・削除</h2>
+<form class="form-hrizonatal" method="POST" action="roomInfoLump.html" name="form1" onSubmit="return check()">
 	<h4>
 	更新・削除を行います<br>
 	削除をクリックすると教室情報の削除が行われます<br>
 	更新ボタンを押すと各教室情報の更新が行えます
 	</h4>
-<form class="form-hrizonatal" method="POST" action="roomInfoLump.html" name="form1" onSubmit="return check()">
-
 
 	<form>
 	<div class="col-sm-offset-1 col-sm-10">
@@ -61,49 +59,94 @@ function check(){
 		<caption>教室情報更新・削除</caption>
 			<thead>
 				<tr>
-					<th class="col-sm-4">名前</th>
-					<th class="col-sm-4">削除</th>
-					<th class="col-sm-2"></th>
+					<th>名前</th>
+					<th>画像</th>
+					<th>規模</th>
+					<th>備品</th>
+					<th>削除</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
 					<tr>
 						<td>A教室</td>
-						<td ><input type="checkbox" name="lumpDel" ></td>
+						<td><img src="image/bRoom.jpg" class="img-rounded" style="width: 210px; height: 140px;"></td>
+						<td><input name="ninnzuu" type="number" value="100" disabled='disabled' /></td>
+						<td>
+						<button type="button" class="btn btn-default" disabled='disabled'>プロジェクター</button>
+								<button type="button" class="btn btn-default" disabled='disabled'>スピーカー</button><br>
+							<button type="button" class="btn btn-default" disabled='disabled'>スクリーン</button></td>
+						<td><input type="checkbox" name="lumpDel" ></td>
 						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>	
 					</tr>
 										<tr>
 						<td>B教室</td>
+						<td><img src="image/bRoom.jpg" class="img-rounded" style="width: 210px; height: 140px;"></td>
+						<td><input name="ninnzuu" type="number" value="100" disabled='disabled' /></td>
+						<td>
+						<button type="button" class="btn btn-default" disabled='disabled'>プロジェクター</button>
+								<button type="button" class="btn btn-default" disabled='disabled'>スピーカー</button><br>
+							<button type="button" class="btn btn-default" disabled='disabled'>スクリーン</button></td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
 						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>C教室</td>
+						<td><img src="image/bRoom.jpg" class="img-rounded" style="width: 210px; height: 140px;"></td>
+						<td><input name="ninnzuu" type="number" value="100" disabled='disabled' /></td>
+						<td>
+						<button type="button" class="btn btn-default" disabled='disabled'>プロジェクター</button>
+								<button type="button" class="btn btn-default" disabled='disabled'>スピーカー</button><br>
+							<button type="button" class="btn btn-default" disabled='disabled'>スクリーン</button></td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
 						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>D教室</td>
+						<td><img src="image/bRoom.jpg" class="img-rounded" style="width: 210px; height: 140px;"></td>
+						<td><input name="ninnzuu" type="number" value="100" disabled='disabled' /></td>
+						<td>
+						<button type="button" class="btn btn-default" disabled='disabled'>プロジェクター</button>
+								<button type="button" class="btn btn-default" disabled='disabled'>スピーカー</button><br>
+							<button type="button" class="btn btn-default" disabled='disabled'>スクリーン</button></td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
 						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>E教室</td>
+						<td><img src="image/bRoom.jpg" class="img-rounded" style="width: 210px; height: 140px;"></td>
+						<td><input name="ninnzuu" type="number" value="100" disabled='disabled' /></td>
+						<td>
+						<button type="button" class="btn btn-default" disabled='disabled'>プロジェクター</button>
+								<button type="button" class="btn btn-default" disabled='disabled'>スピーカー</button><br>
+							<button type="button" class="btn btn-default" disabled='disabled'>スクリーン</button></td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
 						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>F教室</td>
+						<td><img src="image/bRoom.jpg" class="img-rounded" style="width: 210px; height: 140px;"></td>
+						<td><input name="ninnzuu" type="number" value="100" disabled='disabled' /></td>
+						<td>
+						<button type="button" class="btn btn-default" disabled='disabled'>プロジェクター</button>
+								<button type="button" class="btn btn-default" disabled='disabled'>スピーカー</button><br>
+							<button type="button" class="btn btn-default" disabled='disabled'>スクリーン</button></td>
 						<td ><input type="checkbox"
 							name="lumpDel" ></td>
 						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
 					</tr>
 										<tr>
 						<td>G教室</td>
+						<td><img src="image/bRoom.jpg" class="img-rounded" style="width: 210px; height: 140px;"></td>
+						<td><input name="ninnzuu" type="number" value="100" disabled='disabled' /></td>
+						<td>
+						<button type="button" class="btn btn-default" disabled='disabled'>プロジェクター</button>
+								<button type="button" class="btn btn-default" disabled='disabled'>スピーカー</button><br>
+							<button type="button" class="btn btn-default" disabled='disabled'>スクリーン</button></td>
 						<td><input type="checkbox"
 							name="lumpDel" ></td>
 						<td><a href='roomInfoUpdate.html' class="btn btn-danger" name="reserve" value="1">更新</button></td>
@@ -111,6 +154,8 @@ function check(){
 			</tbody>
 		</table>
 		</div>
+		
+		
 		
 					    <div class="col-sm-12" style="text-align:center;">
   		
