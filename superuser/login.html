@@ -11,30 +11,17 @@
 <!-- BootstrapのJS読み込み -->
 <script src="js/bootstrap.min.js"></script>
 </head>
-<body>
-	<h4>IDとPasswordを入力してください</h4>
-	<br>
-	<div center>
-		<form class="form-horizontal" action="adminMenu.html">
-			<fieldset>
-				<div class="form-group">
-					<label for="ID" class="col-sm-2 control-label">ID</label>
-					<div class="col-sm-5">
-						<input type="text" name="id" class="form-control" id="ID" placeholder="ID">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="PASS" class="col-sm-2 control-label">Password</label>
-					<div class="col-sm-5">
-							<input type="password" name="pass" class="form-control" id="PASS"
-							placeholder="Password" >
-					</div>
-				</div>
-			</fieldset>
-			<div class="col-sm-offset-2 col-sm-10">
-				<input type="submit" class="btn btn-default" value="ログイン">
-			</div>
-		</form>
-	</div>
+<body style="background-image: url(image/book.jpg); background-size: cover;">
+<div class="login">
+  <div class="login-triangle"></div>
+  
+  <h2 class="login-header">Login</h2>
+
+  <form class="login-container">
+    <p><input type="email" placeholder="ID"></p>
+    <p><input type="password" placeholder="Password"></p>
+    <p><input type="submit" value="Login"></p>
+  </form>
+</div>
 </body>
 </html>
